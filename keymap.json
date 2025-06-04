@@ -1,0 +1,111 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run zed: open default keymap
+// from the command palette.
+[
+  {
+    "context": "Workspace > Pane > Editor && vim_mode == insert",
+    "bindings": {
+      "j j": "vim::NormalBefore",
+      "ctrl-h": "vim::Left",
+      "ctrl-l": "vim::Right",
+      "ctrl-j": "vim::Down",
+      "ctrl-k": "vim::Up"
+    }
+  },
+  {
+    "context": "Workspace > Pane > Editor && VimControl && vim_mode == normal && !menu",
+    "bindings": {
+      // "shift-q": "editor::Hover",
+      "space f": "file_finder::Toggle",
+      "space l r": "editor::Rename",
+      "space v": "editor::GoToDefinitionSplit",
+      "space /": "editor::ToggleComments",
+      "space t t": "terminal_panel::ToggleFocus",
+      "space s v": "pane::SplitVertical",
+      "space s h": "pane::SplitHorizontal",
+      "g r": "editor::FindAllReferences",
+      "ctrl-j": "editor::AddSelectionBelow",
+      "ctrl-k": "editor::AddSelectionAbove",
+      "space t h": "theme_selector::Toggle",
+      ";": "command_palette::Toggle",
+      "ctrl-w": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Workspace > Pane > Editor && vim_mode == visual",
+    "bindings": {
+      "space /": "vim::ToggleComments"
+    }
+  },
+  {
+    "context": "Workspace || Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-e": "workspace::ToggleLeftDock",
+      "alt-h": "workspace::ActivatePaneLeft",
+      "alt-j": "workspace::ActivatePaneDown",
+      "alt-k": "workspace::ActivatePaneUp",
+      "alt-l": "workspace::ActivatePaneRight"
+    }
+  },
+  {
+    "context": "TabSwitcher || (TabSwitcher > Picker)",
+    "bindings": {
+      "ctrl-j": "menu::SelectNext",
+      "ctrl-k": "menu::SelectPrevious",
+      "ctrl-w": "tab_switcher::CloseSelectedItem"
+    }
+  },
+  {
+    "context": "Workspace > Dock > Pane > Terminal",
+    "bindings": {
+      "ctrl-w": "pane::CloseActiveItem",
+      "j j": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Workspace > Pane > VimControl && vim_mode == visual",
+    "bindings": {
+      ")": ["vim::PushAddSurrounds", {}],
+      "]": ["vim::PushAddSurrounds", {}],
+      "}": ["vim::PushAddSurrounds", {}],
+      "\"": ["vim::PushAddSurrounds", {}],
+      "`": ["vim::PushAddSurrounds", {}]
+    }
+  },
+  {
+    "context": "Workspace > Dock > ProjectPanel && menu && not_editing",
+    "bindings": {
+      "ctrl-a": "project_panel::NewDirectory",
+      "a": "project_panel::NewFile",
+      "c": "workspace::CopyPath",
+      "r": "project_panel::Rename",
+      "d": ["project_panel::Delete", { "skip_prompt": false }],
+      "W": "project_panel::CollapseSelectedEntry",
+      "E": "project_panel::ExpandSelectedEntry"
+    }
+  },
+  {
+    "context": "ProjectPanel && menu && editing",
+    "bindings": {
+      "j j": "menu::Cancel"
+    }
+  },
+  {
+    "context": "Workspace > Picker > Editor && mode == single_line",
+    "bindings": {
+      "ctrl-j": "menu::SelectNext",
+      "ctrl-k": "menu::SelectPrevious"
+    }
+  },
+  {
+    "context": "Workspace > Pane > Editor && menu && showing_completions && vim_mode == insert && extension == go",
+    "bindings": {
+      "ctrl-j": "editor::ContextMenuNext",
+      "ctrl-k": "editor::ContextMenuPrevious"
+    }
+  }
+]
