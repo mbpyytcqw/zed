@@ -31,7 +31,7 @@
       "ctrl-j": "editor::AddSelectionBelow",
       "ctrl-k": "editor::AddSelectionAbove",
       "space t h": "theme_selector::Toggle",
-      ";": "command_palette::Toggle",
+      ":": "command_palette::Toggle",
       "ctrl-w": "pane::CloseActiveItem"
     }
   },
