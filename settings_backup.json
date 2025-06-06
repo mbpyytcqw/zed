@@ -8,7 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // ai bulleshit
-  "agent": {
+  "assistant": {
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4"
@@ -21,17 +21,11 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_text_threads": false
+    "enabled_in_assistant": false
   },
   "show_edit_predictions": false,
   "features": {
     "edit_prediction_provider": "zed"
-  },
-  "tab_bar": {
-    // false → полностью скрыть панель вкладок
-    "show": false,
-    "show_nav_history_buttons": false, // скрыть кнопки «назад/вперёд»
-    "show_tab_bar_buttons": false // скрыть кнопки с «+» и прочие иконки
   },
 
   "vim_mode": true,
