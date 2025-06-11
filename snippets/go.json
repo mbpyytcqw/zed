@@ -1,0 +1,7 @@
+{
+  "AnonimGoFunc": {
+    "prefix": "goa",
+    "body": ["go func() {", "\t$0", "}()"],
+    "description": "go func(){ ... }()"
+  }
+}
