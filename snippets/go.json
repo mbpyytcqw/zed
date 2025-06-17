@@ -3,5 +3,9 @@
     "prefix": "goa",
     "body": ["go func(){$0}()"],
     "description": "go func(){ ... }()"
+  },
+  "MainFunc":{
+    "prefix": "main",
+    "body": ["func main(){$0}"]
   }
 }
