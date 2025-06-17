@@ -34,9 +34,12 @@
     "show_tab_bar_buttons": false // скрыть кнопки с «+» и прочие иконки
   },
 
-  "scrollbar": {
-    "show": "never"
-  },
+  // "scrollbar": {
+  //   "show": "never",
+  //   "git_diff": true,
+  //   "selected_text": true,
+  //   "selected_symbol": true
+  // },
 
   "vim_mode": true,
 
