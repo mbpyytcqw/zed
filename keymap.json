@@ -42,9 +42,21 @@
     }
   },
   {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-n": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-n": "workspace::ToggleLeftDock"
+    }
+  },
+  {
     "context": "Workspace || Editor && vim_mode == normal",
     "bindings": {
-      "ctrl-e": "workspace::ToggleLeftDock",
+      // "ctrl-n": "workspace::ToggleLeftDock",
       "alt-h": "workspace::ActivatePaneLeft",
       "alt-j": "workspace::ActivatePaneDown",
       "alt-k": "workspace::ActivatePaneUp",

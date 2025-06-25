@@ -4,6 +4,10 @@
     "body": ["go func(){$0}()"],
     "description": "go func(){ ... }()"
   },
+  "AnonimFunc": {
+    "prefix":"fua",
+    "body": ["func(){$0}()"]
+  },
   "MainFunc":{
     "prefix": "main",
     "body": ["func main(){$0}"]

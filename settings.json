@@ -28,18 +28,17 @@
     "edit_prediction_provider": "zed"
   },
   "tab_bar": {
-    // false → полностью скрыть панель вкладок
-    "show": false,
-    "show_nav_history_buttons": false, // скрыть кнопки «назад/вперёд»
-    "show_tab_bar_buttons": false // скрыть кнопки с «+» и прочие иконки
+    "show": true,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
   },
 
-  // "scrollbar": {
-  //   "show": "never",
-  //   "git_diff": true,
-  //   "selected_text": true,
-  //   "selected_symbol": true
-  // },
+  "scrollbar": {
+    "show": "never",
+    "git_diff": true,
+    "selected_text": true,
+    "selected_symbol": true
+  },
 
   "vim_mode": true,
 
@@ -54,7 +53,7 @@
   "cursor_blink": false,
   "theme": {
     "mode": "system",
-    "light": "Everforest Dark Medium",
+    "light": "One Dark",
     "dark": "Catppuccin Frappé"
   },
   "terminal": {
